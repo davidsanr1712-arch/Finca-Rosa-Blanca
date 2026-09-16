@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#253b22">
+    
+    <!-- Meta Datos SEO -->
+    <title>Finca Rosa Blanca - Ganadería Sostenible & Genética en Casanare</title>
+    <meta name="description" content="Finca Rosa Blanca: Ganadería sostenible, comercialización de ganado bovino en pie, carne en canal y leche de alta calidad en Aguazul, Casanare. Excelente genética adaptada.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐄</text></svg>">
+
+    <!-- Configuración PWA / Modo Offline -->
+    <link rel="manifest" href='data:application/manifest+json,{"name":"Finca Rosa Blanca","short_name":"Rosa Blanca","start_url":".","display":"standalone","background_color":"#253b22","theme_color":"#253b22","icons":[{"src":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐄</text></svg>","sizes":"192x192","type":"image/svg+xml"}]}'>
+
+    <!-- Etiquetas Open Graph para WhatsApp y Redes Sociales -->
+    <meta property="og:title" content="Finca Rosa Blanca - Ganadería Sostenible & Genética">
+    <meta property="og:description" content="Venta de ganado seleccionado en pie, carne en canal y genética adaptada al trópico bajo en Aguazul, Casanare.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* =========================
+           ESTILOS BASE & RESET
+        ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #faf9f6;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* =========================
+           ENCABEZADO & NAVEGACIÓN
+        ========================= */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #253b22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: #c9983e;
+        }
+
+        .menu-movil-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 26px;
+            cursor: pointer;
+            padding: 4px 8px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #e2dac7;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c9983e;
+        }
+
+        #authContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Botones generales */
+        .btn {
+            background: #c9983e;
+            color: #ffffff !important;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #a97d2e;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn2 {
+            background: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .btn2:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-registro-nav {
+            background: #34512f;
+            font-size: 13px;
+            padding: 8px 14px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white !important;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1eb956;
+        }
+
+        .btn-pdf {
+            background: #d9534f;
+            color: white !important;
+        }
+
+        .btn-pdf:hover {
+            background: #c9302c;
+        }
+
+        /* =========================
+           PORTADA (HERO)
+        ========================= */
+        .hero {
+            min-height: 80vh;
+            background: linear-gradient(rgba(18, 30, 16, 0.75), rgba(18, 30, 16, 0.75)),
+                        url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h4 {
+            color: #c9983e;
+            letter-spacing: 2px;
+            font-size: 13px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 48px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e2dac7;
+            margin-bottom: 25px;
+        }
+
+        .botones {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* =========================
+           ESTADÍSTICAS
+        ========================= */
+        .stats {
+            width: 85%;
+            max-width: 1100px;
+            margin: -40px auto 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            z-index: 10;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat h2 {
+            color: #253b22;
+            font-size: 32px;
+            font-family: Georgia, serif;
+        }
+
+        .stat p {
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* =========================
+           SECCIONES GENERALES
+        ========================= */
+        section {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            font-family: Georgia, serif;
+            color: #253b22;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 15px;
+        }
+
+        .badge-tag {
+            background: #e2dac7;
+            color: #253b22;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           COTIZADOR & CALCULADORA FLETE
+        ========================= */
+        .cotizador-section {
+            background: #253b22;
+            color: #ffffff;
+            border-radius: 20px;
+            margin: 40px 8%;
+            padding: 40px 5%;
+        }
+
+        .cotizador-section .titulo {
+            color: #ffffff;
+        }
+
+        .cotizador-section .subtitulo {
+            color: #e2dac7;
+        }
+
+        .cotizador-card {
+            background: #ffffff;
+            color: #333;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .cotizador-resumen {
+            background: #f8f7f2;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #c9983e;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .resumen-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .resumen-item.total {
+            border-top: 2px solid #e2dac7;
+            padding-top: 15px;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #253b22;
+        }
+
+        /* =========================
+           FILTROS Y BUSCADOR CATÁLOGO
+        ========================= */
+        .catalogo-interactivo {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .buscador-contenedor {
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+
+        .buscador-input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #e2dac7;
+            border-radius: 25px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .buscador-input:focus {
+            border-color: #c9983e;
+        }
+
+        .filtro-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn-filtro {
+            background: #e2dac7;
+            color: #253b22;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-filtro.active, .btn-filtro:hover {
+            background: #253b22;
+            color: #ffffff;
+        }
+
+        /* Nosotros */
+        .nosotros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nosotros-img img {
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+        }
+
+        .valores-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .valor-box {
+            background: #f1ede3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .valor-box h4 {
+            color: #253b22;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .valor-box p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* Tarjetas de Productos & Ganado */
+        .productos { background: #faf9f6; }
+        .cards, .ganado-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card, .ganado-card {
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-img img, .ganado-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content, .ganado-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Precios */
+        .precios-section { background: #f1ede3; }
+        .tabla-precios-contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .precio-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .precio-card.destacado {
+            border: 2px solid #c9983e;
+            transform: scale(1.02);
+        }
+
+        .item-precio {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 13px;
+        }
+
+        /* FAQ */
+        .faq-section { background: #faf9f6; }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #253b22;
+        }
+
+        /* Contacto & Mapa */
+        .contacto {
+            text-align: center;
+            background: #f1ede3;
+        }
+
+        .contacto-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .contacto-item {
+            font-size: 15px;
+            color: #253b22;
+            font-weight: bold;
+            background: #ffffff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .mapa-contenedor {
+            max-width: 900px;
+            margin: 30px auto 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #142312;
+            color: #a3b3a0;
+            padding: 50px 8% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #253b22;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+
+        /* Botones Flotantes */
+        .whatsapp-flotante {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-flotante:hover { transform: scale(1.1); }
+        .whatsapp-flotante svg { width: 32px; height: 32px; }
+
+        .btn-scroll-top {
+            position: fixed;
+            bottom: 90px;
+            right: 25px;
+            background: #253b22;
+            color: #ffffff;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 998;
+            transition: opacity 0.3s;
+        }
+
+        .btn-scroll-top:hover { background: #c9983e; }
+
+        /* =========================
+           VENTANA MODAL (AUTH/PERFIL) MEJORADA
+        ========================= */
+        .modal {
+            display: flex;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            backdrop-filter: blur(5px);
+            
+            /* Nuevas Transiciones */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal.modal-show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 20px;
+            padding: 35px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            max-height: 90vh;
+            overflow-y: auto;
+            
+            /* Animación de entrada */
+            transform: translateY(-30px) scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .modal.modal-show .modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #aaa;
+            transition: color 0.2s;
+            line-height: 1;
+        }
+        
+        .close-modal:hover {
+            color: #d9534f;
+        }
+
+        .modal-tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 25px;
+            background: #f1ede3;
+            border-radius: 12px;
+            padding: 5px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: #ffffff;
+            color: #253b22;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .modal-header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-header h2 {
+            font-family: Georgia, serif;
+            color: #253b22;
+            font-size: 24px;
+        }
+
+        .modal-header p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Estilos de inputs profesionales */
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            fill: #999;
+            transition: fill 0.3s;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 15px 14px 45px; /* Espacio para el ícono izquierdo */
+            border: 1.5px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.3s ease;
+            background-color: #faf9f6;
+        }
+
+        .input-group input:focus {
+            border-color: #c9983e;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 4px rgba(201, 152, 62, 0.15);
+        }
+
+        .input-group input:focus + .input-icon, 
+        .input-group input:focus ~ .input-icon {
+            fill: #c9983e;
+        }
+
+        /* Botón de visibilidad de contraseña */
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .toggle-password svg {
+            width: 18px;
+            height: 18px;
+            fill: #999;
+            transition: fill 0.3s;
+        }
+        
+        .toggle-password:hover svg {
+            fill: #555;
+        }
+
+        /* Alertas Accesibles */
+        .alert-box {
+            display: none;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .alert-success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .alert-error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+        /* Estilos de Impresión (Exportación de PDF Nativa) */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #areaImpresionPDF, #areaImpresionPDF * {
+                visibility: visible;
+            }
+            #areaImpresionPDF {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding: 20px;
+                color: #000;
+                background: #fff;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* =========================
+           RESPONSIVE BASE
+        ========================= */
+        @media(max-width: 1100px) {
+            .cotizador-card { grid-template-columns: 1fr; }
+            .cards, .ganado-grid, .tabla-precios-contenedor { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .nosotros { grid-template-columns: 1fr; }
+        }
+
+        @media screen and (max-width: 768px) {
+            input, select, textarea {
+                font-size: 16px !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .menu-movil-btn { display: block; }
+
+            header {
+                padding: 12px 20px;
+            }
+
+            nav {
+                display: none;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background: #253b22;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 30px 20px;
+                gap: 20px;
+                overflow-y: auto;
+                z-index: 999;
+            }
+
+            nav.nav-active {
+                display: flex;
+            }
+
+            nav a {
+                font-size: 18px;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                padding-bottom: 10px;
+            }
+
+            .hero h1 { font-size: 32px; }
+            section { padding: 45px 5%; }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                width: 92%;
+                gap: 15px;
+                padding: 15px 10px;
+            }
+
+            .stat h2 {
+                font-size: 24px;
+            }
+
+            .cotizador-section {
+                margin: 20px 4%;
+                padding: 20px 15px;
+            }
+
+            .cotizador-card {
+                padding: 15px;
+            }
+
+            .botones {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn, .btn2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+    ========================= -->
+    <header class="no-print">
+        <div class="logo">
+            Finca <span>Rosa Blanca</span>
+        </div>
+
+        <button type="button" id="btnMenuMovil" class="menu-movil-btn" aria-label="Abrir menú de navegación">☰</button>
+
+        <nav id="navMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#ganado">Catálogo</a>
+            <a href="#precios">Precios</a>
+            <a href="#cotizador">Cotizador</a>
+            <a href="#contacto">Contacto</a>
+
+            <div id="authContainer">
+                <button type="button" id="btnAbrirRegistro" class="btn btn-registro-nav">Ingresar / Registrarse</button>
+                <button type="button" id="btnMiCuentaNav" class="btn btn-registro-nav" style="background: #142312; color: #d9a441; display: none;">Mi Cuenta 👤</button>
+            </div>
+
+            <a class="btn" href="https://wa.me/573218290307?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer">Cotizar</a>
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         HERO PORTADA (INICIO)
+    ========================= -->
+    <section id="inicio" class="hero no-print">
+        <div class="hero-content">
+            <h4>GANADERÍA SOSTENIBLE & EXCELENCIA GENÉTICA</h4>
+            <h1>Finca Rosa Blanca</h1>
+            <p>Tradición, rigor genético y compromiso con la alta productividad agropecuaria en los llanos de Casanare, Colombia.</p>
+
+            <div class="botones">
+                <a href="#cotizador" class="btn">Simular Cotización</a>
+                <a href="#precios" class="btn2">Ver Precios de Hoy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS (Acompaña al inicio) -->
+    <div class="stats no-print">
+        <div class="stat"><h2>40+</h2><p>Años de Tradición</p></div>
+        <div class="stat"><h2>350+</h2><p>Cabezas de Ganado</p></div>
+        <div class="stat"><h2>120</h2><p>Hectáreas Pastoreo</p></div>
+        <div class="stat"><h2>100%</h2><p>Sanidad ICA</p></div>
+    </div>
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================= -->
+    <section id="nosotros" class="no-print">
+        <div class="nosotros">
+            <div class="nosotros-img">
+                <img src="imagenes/WhatsApp%20Image%202026-09-15%20at%204.23.45%20PM.jpeg" alt="Finca Rosa Blanca Praderas" loading="lazy">
+            </div>
+            <div class="nosotros-text">
+                <span class="badge-tag">NUESTRA HISTORIA</span>
+                <h2>Tradición de campo con visión de futuro</h2>
+                <p>Ubicada en el municipio de Aguazul, Casanare, **Finca Rosa Blanca** se especializa en la producción bovina de doble propósito, cría, levante y comercialización de carne y leche.</p>
+                
+                <div class="valores-grid">
+                    <div class="valor-box"><h4>🌱 Manejo Sostenible</h4><p>Pastoreo rotacional y cuidado de fuentes hídricas.</p></div>
+                    <div class="valor-box"><h4>🐄 Bienestar Animal</h4><p>Hato libre de estrés con plan sanitario al día.</p></div>
+                    <div class="valor-box"><h4>🧬 Genética Probada</h4><p>Cruzamiento Brahman, Nelore y Girolando.</p></div>
+                    <div class="valor-box"><h4>⚖️ Transparencia</h4><p>Pesaje exacto en báscula certificada.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         NUESTROS PRODUCTOS
+    ========================= -->
+    <section id="productos" class="productos no-print">
+        <h2 class="titulo">Nuestros Productos</h2>
+        <p class="subtitulo">Oferta ganadera comercial y genética de alto rendimiento.</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-img"><img src="imagenes/WhatsApp%20Image%202026-09-15%20at%204.30.25%20PM.jpeg" alt="Ganado en pie"></div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge-tag">CRÍA Y CEBA</span>
+                        <h3>Ganado Bovino en Pie</h3>
+                        <p>Lotes homogéneos listos para cebadero o pie de cría.</p>
+                    </div>
+                    <a href="imagenes/WhatsApp%20Image%202026-09-15%20at%204.29.43%20PM.jpeg" class="btn" target="_blank">Cotizar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"><img src="imagenes/WhatsApp%20Image%202026-09-15%20at%204.39.41%20PM.jpeg" alt="Carne Canal"></div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge-tag">HIGIENE Y RENDIMIENTO</span>
+                        <h3>Carne Bovina en Canal</h3>
+                        <p>Canales con rendimiento superior al 54%, plantas Invima.</p>
+                    </div>
+                    <a href="https://wa.me/573218290307?text=Quiero%20cotizar%20Carne%20en%20Canal" class="btn" target="_blank">Cotizar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"><img src="imagenes/premium_photo-1682129071833-65eed17bcf11.avif" alt="Leche y Genética"></div>
+                <div class="card-content">
+                    <div>
+                        <span class="badge-tag">LECHE Y GENÉTICA</span>
+                        <h3>Leche Cruda & Material Genético</h3>
+                        <p>Leche con tanque de frío y pajillas de toros probados.</p>
+                    </div>
+                    <a href="https://wa.me/573218290307?text=Quiero%20informacion%20de%20Genetica" class="btn" target="_blank">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CATÁLOGO FILTRABLE DE GANADO
+    ========================= -->
+    <section id="ganado" class="no-print">
+        <h2 class="titulo">Catálogo y Razas</h2>
+        <p class="subtitulo">Busque por peso específico o raza en tiempo real o seleccione una categoría.</p>
+
+        <div class="catalogo-interactivo">
+            <!-- Barra de Búsqueda Rápida en Tiempo Real -->
+            <div class="buscador-contenedor">
+                <input type="text" id="inputBuscador" class="buscador-input" placeholder="🔍 Buscar por raza (ej. Brahman, Beefmaster) o peso (ej. 600-1,100kg)...">
+            </div>
+
+            <div class="filtro-contenedor">
+                <button type="button" class="btn-filtro active" data-filter="todos">Todos</button>
+                <button type="button" class="btn-filtro" data-filter="cria">Cría</button>
+                <button type="button" class="btn-filtro" data-filter="ceba">Ceba</button>
+                <button type="button" class="btn-filtro" data-filter="leche">Leche</button>
+                <button type="button" class="btn-filtro" data-filter="genetica">Genética</button>
+            </div>
+
+            <div class="ganado-grid" id="ganadoGrid">
+                <div class="ganado-card" data-categoria="ceba" data-search="lote brahman blanco ceba peso promedio 380 kg novillos">
+                    <img src="imagenes/IMG_20210214_115739_497-scaled.jpg" alt="Brahman Comercial">
+                    <div class="ganado-info">
+                        <div>
+                            <span class="badge-tag">CEBA</span>
+                            <h3>Lote Brahman Rojo</h3>
+                            <p>Novillos rústicos de alta conversión cárnica, peso promedio 800-1,100 kg.</p>
+                        </div>
+                        <button type="button" class="btn btn-whatsapp btn-preguntar-lote" data-lote="Lote Brahman Blanco (380kg)" style="width: 100%; margin-top: 15px;">
+                            📱 Preguntar por este lote
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ganado-card" data-categoria="cria" data-search="hembras nelore seleccionadas desmome hembra cria 200 kg">
+                    <img src="imagenes/Beefmaster%2003.jpg" alt="Raza Nelore">
+                    <div class="ganado-info">
+                        <div>
+                            <span class="badge-tag">CRÍA</span>
+                            <h3>Hembras Beefmaster Seleccionadas</h3>
+                            <p>Poseen una alta producción de leche y excelente instinto de protección, garantizando el destete de becerros más pesados y sanos, peso promedio 600-800 kg.</p>
+                        </div>
+                        <button type="button" class="btn btn-whatsapp btn-preguntar-lote" data-lote="Lote Hembras Nelore (200kg)" style="width: 100%; margin-top: 15px;">
+                            📱 Preguntar por este lote
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ganado-card" data-categoria="leche" data-search="vacas y novillas girolando leche 450 kg ordeño">
+                    <img src="imagenes/WhatsApp%20Image%202026-09-15%20at%206.05.24%20PM.jpeg" alt="Cruce Girolando">
+                    <div class="ganado-info">
+                        <div>
+                            <span class="badge-tag">LECHE</span>
+                            <h3>Vacas y Novillas Beefmaster</h3>
+                            <p>La raza Beefmaster es una de las opciones más rentables y versátiles para la ganadería de carne y el cruzamiento industrial.</p>
+                        </div>
+                        <button type="button" class="btn btn-whatsapp btn-preguntar-lote" data-lote="Lote Girolando Leche (450kg)" style="width: 100%; margin-top: 15px;">
+                            📱 Preguntar por este lote
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ganado-card" data-categoria="genetica" data-search="toros reproductores probados genetica reproductor brahman nelore 650 kg">
+                    <img src="imagenes/2-1.png" alt="Toro Reproductor">
+                    <div class="ganado-info">
+                        <div>
+                            <span class="badge-tag">GENÉTICA</span>
+                            <h3>Toros Reproductores Probados</h3>
+                            <p>Reproductores puros y comerciales con evaluación de fertilidad, peso promedio 650 kg.</p>
+                        </div>
+                        <button type="button" class="btn btn-whatsapp btn-preguntar-lote" data-lote="Toro Reproductor Probado" style="width: 100%; margin-top: 15px;">
+                            📱 Preguntar por este lote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         PRECIOS REFERENCIALES
+    ========================= -->
+    <section id="precios" class="precios-section no-print">
+        <h2 class="titulo">Tabla Referencial de Precios</h2>
+        <p class="subtitulo">Precios por kilo en báscula ajustados al mercado semanal de Casanare.</p>
+
+        <div class="tabla-precios-contenedor">
+            <div class="precio-card">
+                <h3>Ganado Macho</h3>
+                <div class="item-precio"><span>Macho Desteto (kg)</span><strong>$8.200 - $8.800 COP</strong></div>
+                <div class="item-precio"><span>Novillo Levante (kg)</span><strong>$7.800 - $8.300 COP</strong></div>
+                <div class="item-precio"><span>Novillo Ceba (kg)</span><strong>$8.000 - $8.500 COP</strong></div>
+            </div>
+
+            <div class="precio-card destacado">
+                <h3>Ganado Hembra</h3>
+                <div class="item-precio"><span>Hembra Desteto (kg)</span><strong>$7.200 - $7.800 COP</strong></div>
+                <div class="item-precio"><span>Novilla Escotera (kg)</span><strong>$6.900 - $7.400 COP</strong></div>
+                <div class="item-precio"><span>Vaca Ceba (kg)</span><strong>$6.200 - $6.700 COP</strong></div>
+            </div>
+
+            <div class="precio-card">
+                <h3>Canal y Lácteos</h3>
+                <div class="item-precio"><span>Leche Cruda (Litro)</span><strong>$2.100 - $2.400 COP</strong></div>
+                <div class="item-precio"><span>Carne en Canal (kg)</span><strong>$15.500 - $16.800 COP</strong></div>
+                <div class="item-precio"><span>Pajillas Genética</span><strong>$45.000 - $90.000 COP</strong></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         COTIZADOR Y CALCULADORA DE FLETE
+    ========================= -->
+    <section id="cotizador" class="cotizador-section">
+        <h2 class="titulo">Cotizador & Calculadora de Flete</h2>
+        <p class="subtitulo">Seleccione las especificaciones del lote y el municipio de destino para calcular su compra y envío.</p>
+
+        <div class="cotizador-card" id="areaImpresionPDF">
+            <div class="cotizador-form">
+                <div class="form-group">
+                    <label for="cotTipo" style="display:block; margin-bottom:6px; font-weight:bold; font-size:13px; color:#ffffff;">Tipo de Ganado / Categoría</label>
+                    <select id="cotTipo" style="width:100%; padding:12px; border-radius:10px; border:none; outline:none;">
+                        <option value="macho_desteto" data-precio="8500">Macho Desteto (180kg - 240kg)</option>
+                        <option value="novillo_levante" data-precio="8100">Novillo Levante (250kg - 350kg)</option>
+                        <option value="novillo_ceba" data-precio="8300">Novillo Ceba Pesado (360kg+)</option>
+                        <option value="hembra_desteto" data-precio="7500">Hembra Desteto (180kg - 230kg)</option>
+                        <option value="novilla_escotera" data-precio="7150">Novilla Escotera (240kg - 320kg)</option>
+                        <option value="vaca_ceba" data-precio="6500">Vaca Escotera Ceba (350kg+)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-top:15px;">
+                    <label for="cotPeso" style="display:block; margin-bottom:6px; font-weight:bold; font-size:13px; color:#ffffff;">Peso Estimado Promedio por Cabeza (kg)</label>
+                    <input type="number" id="cotPeso" value="200" min="100" max="700" step="5" style="width:100%; padding:12px; border-radius:10px; border:none; outline:none;">
+                </div>
+
+                <div class="form-group" style="margin-top:15px;">
+                    <label for="cotCabezas" style="display:block; margin-bottom:6px; font-weight:bold; font-size:13px; color:#ffffff;">Cantidad de Cabezas</label>
+                    <input type="number" id="cotCabezas" value="10" min="1" max="500" style="width:100%; padding:12px; border-radius:10px; border:none; outline:none;">
+                </div>
+
+                <!-- Calculadora de Flete -->
+                <div class="form-group" style="border-top: 2px dashed rgba(255,255,255,0.2); padding-top: 15px; margin-top: 15px;">
+                    <label for="cotDestino" style="display:block; margin-bottom:6px; font-weight:bold; font-size:13px; color:#ffffff;">Destino de Transporte / Flete</label>
+                    <select id="cotDestino" style="width:100%; padding:12px; border-radius:10px; border:none; outline:none;">
+                        <option value="aguazul" data-flete="150000">Aguazul (Local) - $150.000</option>
+                        <option value="yopal" data-flete="350000">Yopal (Casanare) - $350.000</option>
+                        <option value="villavicencio" data-flete="1200000">Villavicencio (Meta) - $1.200.000</option>
+                        <option value="bogota" data-flete="2200000">Bogotá D.C. - $2.200.000</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="cotizador-resumen">
+                <div>
+                    <h3 style="color: #253b22; margin-bottom: 15px;">Ficha Técnica / Resumen</h3>
+                    <div class="resumen-item">
+                        <span>Precio Kilo Referencial:</span>
+                        <strong id="cotPrecioKg">$8.500 COP</strong>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Valor Aprox. por Animal:</span>
+                        <strong id="cotPrecioAnimal">$1.700.000 COP</strong>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Subtotal Ganado:</span>
+                        <strong id="cotSubtotal">$17.000.000 COP</strong>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Costo de Transporte:</span>
+                        <strong id="cotValorFlete">$150.000 COP</strong>
+                    </div>
+                    <div class="resumen-item total">
+                        <span>VALOR TOTAL ESTIMADO:</span>
+                        <strong id="cotTotalLote">$17.150.000 COP</strong>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;" class="no-print">
+                    <button type="button" id="btnEnviarCotizacionWA" class="btn btn-whatsapp" style="width: 100%; padding: 12px; font-size: 14px;">
+                        📱 Solicitar Lote por WhatsApp
+                    </button>
+                    <button type="button" id="btnDescargarPDF" class="btn btn-pdf" style="width: 100%; padding: 12px; font-size: 14px;">
+                        📄 Descargar Ficha Técnica / PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACTO Y MAPA INCRUSTADO
+    ========================= -->
+    <section id="contacto" class="contacto no-print">
+        <h2 class="titulo">Ubicación y Contacto</h2>
+        <p>Visítenos en la finca o programe su despacho con nuestro equipo comercial.</p>
+
+        <div class="contacto-info">
+            <div class="contacto-item">📍 Aguazul, Casanare, Colombia</div>
+            <div class="contacto-item">📞 +57 321 829 0307</div>
+            <div class="contacto-item">✉️ contacto@fincarosablanca.com</div>
+        </div>
+
+        <div class="mapa-contenedor">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31782.909562725455!2d-72.5694285226168!3d5.172901305459341!2m3!1f0!0f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6b0ce395d9e52d%3A0x8e8eb063b53c7a3!2sAguazul%2C%20Casanare!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" 
+                width="100%" 
+                height="320" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa Ubicación Finca Rosa Blanca Aguazul Casanare">
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer class="no-print">
+        <div class="footer-grid">
+            <div>
+                <h3>Finca Rosa Blanca</h3>
+                <p>Ganadería sostenible y venta de ganado seleccionado en Casanare.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#cotizador">Cotizador</a>
+                <a href="#ganado">Catálogo</a>
+            </div>
+            <div>
+                <h3>Servicios</h3>
+                <a href="#productos">Ganado en Pie</a>
+                <a href="#productos">Carne en Canal</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finca Rosa Blanca. Todos los derechos reservados. Aguazul, Casanare.</p>
+        </div>
+    </footer>
+
+
+    <!-- =========================
+         BOTONES FLOTANTES
+    ========================= -->
+    <a href="https://wa.me/573218290307?text=Hola%2C%20quisiera%20mas%20informacion" class="whatsapp-flotante no-print" target="_blank" rel="noopener noreferrer" aria-label="Contacto directo WhatsApp">
+        <svg viewBox="0 0 32 32" fill="white">
+            <path d="M16 2a13 13 0 0 0-11.2 19.6L3 29l7.6-1.7A13 13 0 1 0 16 2zm6.6 18.5c-.3.8-1.5 1.5-2.1 1.6-.6.1-1.3.2-4.3-1-3.6-1.5-5.9-5.1-6.1-5.3-.2-.2-1.5-2-1.5-3.8 0-1.8.9-2.7 1.3-3.1.3-.3.8-.4 1.1-.4.3 0 .6 0 .8.1.3.1.6.8.8 1.3.2.5.5 1.2.3 1.5-.1.3-.3.6-.5.8-.2.2-.4.4-.2.8.5.8 1.4 1.9 2.5 2.6 1.4 1 2.5 1.2 2.9 1.4.4.1.7 0 .9-.2.3-.3.8-1 1.1-1.4.3-.4.6-.3 1 0 .4.2 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.3 0 1.2-.3 2z"/>
+        </svg>
+    </a>
+
+    <button type="button" id="btnScrollTop" class="btn-scroll-top no-print" aria-label="Volver arriba en la página">↑</button>
+
+
+    <!-- =========================
+         VENTANA MODAL ACCESIBLE Y MEJORADA (AUTH/PERFIL)
+    ========================= -->
+    <div id="modalAuth" class="modal no-print" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="close-modal" id="btnCerrarModal" aria-label="Cerrar modal">&times;</span>
+
+            <div id="alertBox" class="alert-box" aria-live="polite" role="status"></div>
+
+            <div id="authTabs" class="modal-tabs">
+                <button type="button" class="tab-btn active" id="tabIngresar">Iniciar Sesión</button>
+                <button type="button" class="tab-btn" id="tabRegistrarse">Registrarse</button>
+            </div>
+
+            <!-- FORMULARIO LOGIN -->
+            <form id="formLogin">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Bienvenido de nuevo</h2>
+                    <p>Ingresa tus credenciales para continuar.</p>
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <input type="email" id="loginEmail" name="email" required placeholder="Correo Electrónico">
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    <input type="password" id="loginPass" name="password" required placeholder="Contraseña" autocomplete="current-password">
+                    <button type="button" class="toggle-password" title="Mostrar contraseña" onclick="togglePasswordVisibility('loginPass')">
+                        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; padding: 14px; margin-top: 10px; font-size: 15px;">Iniciar Sesión</button>
+            </form>
+
+            <!-- FORMULARIO REGISTRO -->
+            <form id="formRegistro" style="display: none;">
+                <div class="modal-header">
+                    <h2>Crear Cuenta</h2>
+                    <p>Únete a nuestra comunidad ganadera.</p>
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <input type="text" id="regNombre" required placeholder="Nombre Completo" minlength="3">
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <input type="tel" id="regTel" required placeholder="Teléfono / WhatsApp" pattern="[0-9]{10}" title="Debe contener 10 dígitos numéricos">
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <input type="email" id="regEmail" required placeholder="Correo Electrónico">
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" viewBox="0 0 24 24">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    <input type="password" id="regPass" required minlength="6" placeholder="Contraseña (Mín. 6 caracteres)">
+                    <button type="button" class="toggle-password" title="Mostrar contraseña" onclick="togglePasswordVisibility('regPass')">
+                        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; padding: 14px; margin-top: 10px; font-size: 15px;">Registrarse</button>
+            </form>
+
+            <!-- VISTA DE PERFIL -->
+            <div id="profileView" style="display: none;">
+                <div class="modal-header">
+                    <h2>Mi Perfil</h2>
+                    <p>Gestiona tu información</p>
+                </div>
+                <div id="profileDisplay" style="background:#faf9f6; padding: 20px; border-radius: 12px; border: 1px solid #eee;">
+                    <p style="margin-bottom: 10px;"><strong style="color: #253b22;">👤 Nombre:</strong> <span id="profNombre">-</span></p>
+                    <p style="margin-bottom: 10px;"><strong style="color: #253b22;">📞 Teléfono:</strong> <span id="profTel">-</span></p>
+                    <p style="margin-bottom: 10px;"><strong style="color: #253b22;">✉️ Correo:</strong> <span id="profEmail">-</span></p>
+                </div>
+                <button type="button" id="btnCerrarSesion" class="btn" style="background:#fff; color:#dc3545 !important; border: 2px solid #dc3545; width:100%; padding:14px; margin-top: 20px;">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT DE FUNCIONALIDADES
+    ========================= -->
+    <script>
+        // Función global para mostrar/ocultar contraseña
+        function togglePasswordVisibility(inputId) {
+            const input = document.getElementById(inputId);
+            const btn = input.nextElementSibling;
+            
+            if (input.type === "password") {
+                input.type = "text";
+                // Cambiar el ícono al de ojo tachado (opcional, aquí solo cambiamos opacidad como efecto)
+                btn.style.opacity = "0.5";
+            } else {
+                input.type = "password";
+                btn.style.opacity = "1";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- REGISTRO DE SERVICE WORKER PARA MODO OFFLINE (PWA) ---
+            if ('serviceWorker' in navigator) {
+                const swCode = `
+                    const CACHE_NAME = 'finca-rosa-blanca-v1';
+                    self.addEventListener('install', e => {
+                        e.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(['./'])));
+                    });
+                    self.addEventListener('fetch', e => {
+                        e.respondWith(caches.match(e.request).then(res => res || fetch(e.request)));
+                    });
+                `;
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+                navigator.serviceWorker.register(swUrl).catch(() => {});
+            }
+
+            // --- MENÚ MÓVIL ---
+            const btnMenuMovil = document.getElementById('btnMenuMovil');
+            const navMenu = document.getElementById('navMenu');
+
+            btnMenuMovil.addEventListener('click', () => {
+                navMenu.classList.toggle('nav-active');
+            });
+
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => navMenu.classList.remove('nav-active'));
+            });
+
+            // --- BOTÓN VOLVER ARRIBA ---
+            const btnScrollTop = document.getElementById('btnScrollTop');
+            window.addEventListener('scroll', () => {
+                btnScrollTop.style.display = (window.scrollY > 300) ? 'flex' : 'none';
+            });
+            btnScrollTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // --- COTIZADOR INTERACTIVO Y CALCULADORA DE FLETE ---
+            const cotTipo = document.getElementById('cotTipo');
+            const cotPeso = document.getElementById('cotPeso');
+            const cotCabezas = document.getElementById('cotCabezas');
+            const cotDestino = document.getElementById('cotDestino');
+
+            const cotPrecioKg = document.getElementById('cotPrecioKg');
+            const cotPrecioAnimal = document.getElementById('cotPrecioAnimal');
+            const cotSubtotal = document.getElementById('cotSubtotal');
+            const cotValorFlete = document.getElementById('cotValorFlete');
+            const cotTotalLote = document.getElementById('cotTotalLote');
+
+            const btnEnviarCotizacionWA = document.getElementById('btnEnviarCotizacionWA');
+            const btnDescargarPDF = document.getElementById('btnDescargarPDF');
+
+            function calcularCotizacion() {
+                if (!cotTipo || !cotPeso || !cotCabezas || !cotDestino) return;
+
+                const precioKg = parseFloat(cotTipo.options[cotTipo.selectedIndex].dataset.precio) || 0;
+                const peso = parseFloat(cotPeso.value) || 0;
+                const cabezas = parseInt(cotCabezas.value) || 0;
+                const costoFlete = parseFloat(cotDestino.options[cotDestino.selectedIndex].dataset.flete) || 0;
+
+                const valAnimal = precioKg * peso;
+                const subtotal = valAnimal * cabezas;
+                const totalConFlete = subtotal + costoFlete;
+
+                cotPrecioKg.textContent = `$${precioKg.toLocaleString('es-CO')} COP`;
+                cotPrecioAnimal.textContent = `$${valAnimal.toLocaleString('es-CO')} COP`;
+                cotSubtotal.textContent = `$${subtotal.toLocaleString('es-CO')} COP`;
+                cotValorFlete.textContent = `$${costoFlete.toLocaleString('es-CO')} COP`;
+                cotTotalLote.textContent = `$${totalConFlete.toLocaleString('es-CO')} COP`;
+            }
+
+            cotTipo.addEventListener('change', calcularCotizacion);
+            cotPeso.addEventListener('input', calcularCotizacion);
+            cotCabezas.addEventListener('input', calcularCotizacion);
+            cotDestino.addEventListener('change', calcularCotizacion);
+            calcularCotizacion();
+
+            // WhatsApp desde Cotizador
+            btnEnviarCotizacionWA.addEventListener('click', () => {
+                const tipoTexto = cotTipo.options[cotTipo.selectedIndex].text;
+                const peso = cotPeso.value;
+                const cabezas = cotCabezas.value;
+                const destinoTexto = cotDestino.options[cotDestino.selectedIndex].text;
+                const total = cotTotalLote.textContent;
+
+                const mensaje = `Hola Finca Rosa Blanca, me interesa cotizar un lote:\n- Tipo: ${tipoTexto}\n- Peso estimado: ${peso} kg/cabeza\n- Cantidad: ${cabezas} cabezas\n- Destino/Flete: ${destinoTexto}\n- Valor Total: ${total}`;
+                window.open(`https://wa.me/573218290307?text=${encodeURIComponent(mensaje)}`, '_blank');
+            });
+
+            // Descargar Ficha Técnica / PDF
+            btnDescargarPDF.addEventListener('click', () => {
+                window.print();
+            });
+
+            // --- FILTRO DINÁMICO Y BUSCADOR DE CATÁLOGO ---
+            const inputBuscador = document.getElementById('inputBuscador');
+            const botonesFiltro = document.querySelectorAll('.btn-filtro');
+            const tarjetasGanado = document.querySelectorAll('.ganado-card');
+
+            function filtrarCatalogo() {
+                const textoBusqueda = inputBuscador.value.toLowerCase().trim();
+                const filtroActivo = document.querySelector('.btn-filtro.active').dataset.filter;
+
+                tarjetasGanado.forEach(card => {
+                    const datosBusqueda = card.dataset.search.toLowerCase();
+                    const categoria = card.dataset.categoria;
+
+                    const coincideFiltro = (filtroActivo === 'todos' || categoria === filtroActivo);
+                    const coincideTexto = datosBusqueda.includes(textoBusqueda);
+
+                    if (coincideFiltro && coincideTexto) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            inputBuscador.addEventListener('input', filtrarCatalogo);
+
+            botonesFiltro.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    botonesFiltro.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filtrarCatalogo();
+                });
+            });
+
+            // --- BOTONERA CONSULTA DIRECTA POR LOTE (WHATSAPP) ---
+            document.querySelectorAll('.btn-preguntar-lote').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const nombreLote = e.target.dataset.lote;
+                    const mensaje = `Hola Finca Rosa Blanca, quisiera solicitar información sobre el "${nombreLote}".`;
+                    window.open(`https://wa.me/573218290307?text=${encodeURIComponent(mensaje)}`, '_blank');
+                });
+            });
+
+            // --- LÓGICA DE AUTENTICACIÓN Y MODAL ---
+            const modal = document.getElementById('modalAuth');
+            const btnAbrir = document.getElementById('btnAbrirRegistro');
+            const btnMiCuenta = document.getElementById('btnMiCuentaNav');
+            const btnCerrar = document.getElementById('btnCerrarModal');
+            const alertBox = document.getElementById('alertBox');
+
+            const tabIngresar = document.getElementById('tabIngresar');
+            const tabRegistrarse = document.getElementById('tabRegistrarse');
+            const formLogin = document.getElementById('formLogin');
+            const formRegistro = document.getElementById('formRegistro');
+            const profileView = document.getElementById('profileView');
+            const authTabs = document.getElementById('authTabs');
+
+            let usuarioActivo = JSON.parse(localStorage.getItem('userRosaBlanca')) || null;
+            let baseUsuarios = JSON.parse(localStorage.getItem('usuariosRosaBlanca')) || [];
+
+            function limpiarFormularios() {
+                formLogin.reset();
+                formRegistro.reset();
+                // Restaurar los tipos de input por si quedaron en text
+                document.getElementById('loginPass').type = 'password';
+                document.getElementById('regPass').type = 'password';
+            }
+
+            function actualizarEstadoNav() {
+                if (usuarioActivo) {
+                    btnAbrir.style.display = 'none';
+                    btnMiCuenta.style.display = 'inline-block';
+                } else {
+                    btnAbrir.style.display = 'inline-block';
+                    btnMiCuenta.style.display = 'none';
+                }
+            }
+            actualizarEstadoNav();
+
+            function mostrarAlerta(msg, tipo = 'success') {
+                alertBox.textContent = msg;
+                alertBox.className = `alert-box alert-${tipo}`;
+                alertBox.style.display = 'block';
+                setTimeout(() => { alertBox.style.display = 'none'; }, 3500);
+            }
+
+            function abrirModal() {
+                modal.classList.add('modal-show');
+                if (usuarioActivo) {
+                    authTabs.style.display = 'none';
+                    formLogin.style.display = 'none';
+                    formRegistro.style.display = 'none';
+                    profileView.style.display = 'block';
+
+                    document.getElementById('profNombre').textContent = usuarioActivo.nombre;
+                    document.getElementById('profTel').textContent = usuarioActivo.tel;
+                    document.getElementById('profEmail').textContent = usuarioActivo.email;
+                } else {
+                    authTabs.style.display = 'flex';
+                    activarTabLogin();
+                }
+            }
+
+            function cerrarModal() { 
+                modal.classList.remove('modal-show');
+                setTimeout(limpiarFormularios, 300); // Limpia después de la transición
+            }
+
+            function activarTabLogin() {
+                tabIngresar.classList.add('active');
+                tabRegistrarse.classList.remove('active');
+                formLogin.style.display = 'block';
+                formRegistro.style.display = 'none';
+                profileView.style.display = 'none';
+            }
+
+            function activarTabRegistro() {
+                tabRegistrarse.classList.add('active');
+                tabIngresar.classList.remove('active');
+                formRegistro.style.display = 'block';
+                formLogin.style.display = 'none';
+                profileView.style.display = 'none';
+            }
+
+            btnAbrir.addEventListener('click', abrirModal);
+            btnMiCuenta.addEventListener('click', abrirModal);
+            btnCerrar.addEventListener('click', cerrarModal);
+            tabIngresar.addEventListener('click', activarTabLogin);
+            tabRegistrarse.addEventListener('click', activarTabRegistro);
+
+            window.addEventListener('click', (e) => { 
+                if (e.target === modal) cerrarModal(); 
+            });
+
+            // Login submit
+            formLogin.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('loginEmail').value.trim();
+                const pass = document.getElementById('loginPass').value;
+
+                const encontrado = baseUsuarios.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === pass);
+
+                if (!encontrado) {
+                    mostrarAlerta('Correo o contraseña incorrectos.', 'error');
+                    return;
+                }
+
+                usuarioActivo = { nombre: encontrado.nombre, tel: encontrado.tel, email: encontrado.email };
+                localStorage.setItem('userRosaBlanca', JSON.stringify(usuarioActivo));
+                actualizarEstadoNav();
+                mostrarAlerta('Sesión iniciada correctamente.');
+                setTimeout(() => {
+                    cerrarModal();
+                }, 1000);
+            });
+
+            // Registro submit
+            formRegistro.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const nombre = document.getElementById('regNombre').value.trim();
+                const tel = document.getElementById('regTel').value.trim();
+                const email = document.getElementById('regEmail').value.trim();
+                const pass = document.getElementById('regPass').value;
+
+                if (baseUsuarios.some(u => u.email.toLowerCase() === email.toLowerCase())) {
+                    mostrarAlerta('Ese correo ya está registrado.', 'error');
+                    return;
+                }
+
+                baseUsuarios.push({ nombre, tel, email, password: pass });
+                localStorage.setItem('usuariosRosaBlanca', JSON.stringify(baseUsuarios));
+
+                usuarioActivo = { nombre, tel, email };
+                localStorage.setItem('userRosaBlanca', JSON.stringify(usuarioActivo));
+
+                actualizarEstadoNav();
+                mostrarAlerta('Registro exitoso.');
+                setTimeout(() => {
+                    cerrarModal();
+                }, 1000);
+            });
+
+            // Logout
+            document.getElementById('btnCerrarSesion').addEventListener('click', () => {
+                localStorage.removeItem('userRosaBlanca');
+                usuarioActivo = null;
+                actualizarEstadoNav();
+                cerrarModal();
+            });
+        });
+    </script>
+</body>
+</html>
